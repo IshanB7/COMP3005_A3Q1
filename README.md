@@ -7,3 +7,5 @@
 4. Open the query tool for the created database and run query.sql
 5. Change connection parameters on line 4 of main.py if needed
 6. Run main.py
+
+YouTube video: https://youtu.be/IWYa7Uk26sQ
