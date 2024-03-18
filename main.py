@@ -7,8 +7,9 @@ with psycopg.connect("dbname=COMP3005 user=postgres password=student host=localh
         # querying for all students in database
         def getAllStudents():
             cursor.execute("SELECT * FROM students")
-            for record in cursor:
-                print(record)
+            records = cursor.fetchall()
+            for record in records:
+                print(f"({record[0]},'{record[1]}', '{record[2]}', '{record[3]}', {record[4].strftime('%Y-%m-%d')}')")
 
         # adding a student
         def addStudent():
